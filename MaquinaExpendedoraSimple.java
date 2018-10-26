@@ -20,7 +20,7 @@ public class MaquinaExpendedoraSimple {
         precioBillete = 12;
         balanceClienteActual = 0;
         totalDineroAcumulado = 0;
-        estacionOrigen = "León";
+        estacionOrigen = "Leon";
         estacionDestino = "Oviedo";
     }
     
@@ -32,7 +32,7 @@ public class MaquinaExpendedoraSimple {
         precioBillete = precio;
         balanceClienteActual = 0;
         totalDineroAcumulado = 0;
-        estacionOrigen = "León";
+        estacionOrigen = "Leon";
         estacionDestino = destino;
     }
 
@@ -73,5 +73,12 @@ public class MaquinaExpendedoraSimple {
         totalDineroAcumulado = totalDineroAcumulado + balanceClienteActual;
         // Queda preparada para el proximo cliente
         balanceClienteActual = 0;
+    }
+    
+    /**
+     * Devuelve el total del dinero acumulado desde su puesta en marcha
+     */
+    public int getDineroAcumulado(){
+        return totalDineroAcumulado;
     }
 }
