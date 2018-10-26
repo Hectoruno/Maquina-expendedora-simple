@@ -76,9 +76,16 @@ public class MaquinaExpendedoraSimple {
     }
     
     /**
-     * Devuelve el total del dinero acumulado desde su puesta en marcha
+     * Devuelve el total del dinero acumulado desde su puesta en marcha.
      */
     public int getDineroAcumulado(){
         return totalDineroAcumulado;
+    }
+    
+    /**
+     * Cambiamos el precio del billete.
+     */
+    public void setPrecioBillete(int precioACambiar){
+        precioBillete = precioACambiar;
     }
 }
