@@ -23,6 +23,18 @@ public class MaquinaExpendedoraSimple {
         estacionOrigen = "León";
         estacionDestino = "Oviedo";
     }
+    
+    /**
+     * Segunda máquina en la que elegimos el precio por billete por parámetro
+     * el origen sea fijo y el destino introducido por parámetro.
+     */
+    public MaquinaExpendedoraSimple(int precio, String destino) {
+        precioBillete = precio;
+        balanceClienteActual = 0;
+        totalDineroAcumulado = 0;
+        estacionOrigen = "León";
+        estacionDestino = destino;
+    }
 
     /**
      * Devuelve el precio del billete
